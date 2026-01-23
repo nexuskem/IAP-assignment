@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Total Price Calculator</title>
+</head>
+<body>
+    <h2>Exercise 3</h2>
+
+    <table border="1">
+        <caption>Running Total of all TextBoxes</caption>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Milk:</td>
+                <td><input type="number" id="price1" value="0" oninput="calculateTotal()"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bread:</td>
+                <td><input type="number" id="price2" value="0" oninput="calculateTotal()"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Noodles:</td>
+                <td><input type="number" id="price3" value="0" oninput="calculateTotal()"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Cheese:</td>
+                <td><input type="number" id="price4" value="0" oninput="calculateTotal()"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><b>Total Price:</b></td>
+                <td><input type="text" id="totalPrice" readonly></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="total_price.js"></script>
+</body>
+</html>
